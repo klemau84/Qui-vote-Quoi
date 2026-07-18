@@ -1,1 +1,1 @@
-Conserver uniquement .git, supprimer absolument tout le reste, puis copier l'intégralité du ZIP. Commit conseillé : V8.1 - Correctif base SQLite
+Conserver uniquement .git, supprimer tout le reste, puis copier l'intégralité du ZIP. Commit conseillé : V8.2 - Correctif métriques

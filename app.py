@@ -41,10 +41,21 @@ couverture = query("SELECT * FROM couverture_donnees")
 imports = query("SELECT * FROM statut_imports")
 sources = query("SELECT * FROM sources")
 
+def safe_number(row, key, default=0):
+    value = row.get(key, default)
+    return default if pd.isna(value) else value
+
+def safe_int(row, key, default=0):
+    return int(safe_number(row, key, default))
+
+def safe_percent(row, key):
+    value = row.get(key)
+    return "N/D" if value is None or pd.isna(value) else f"{float(value):.1f} %"
+
 st.title("Qui vote quoi")
 if DATABASE_REBUILT:
     st.success("La base de données a été reconstruite automatiquement depuis les fichiers CSV.")
-st.caption("V8.1 · Votes, efficacité, chronologie, élus, groupes et application des lois")
+st.caption("V8.2 · Correctifs des métriques et données incomplètes")
 
 with st.sidebar:
     niveaux = st.multiselect(
@@ -148,10 +159,10 @@ with tabs[3]:
     selection = st.selectbox("Texte", ind_textes.titre.sort_values(), key="eff_text")
     row = ind_textes[ind_textes.titre == selection].iloc[0]
     c1,c2,c3,c4 = st.columns(4)
-    c1.metric("Durée", "N/D" if pd.isna(row.duree_jours) else f"{int(row.duree_jours)} jours")
-    c2.metric("Scrutins adoptés", f"{int(row.scrutins_adoptes)}/{int(row.scrutins_recenses)}")
-    c3.metric("Amendements adoptés", f"{int(row.amendements_adoptes)}/{int(row.amendements_recenses)}")
-    c4.metric("Application", "N/D" if pd.isna(row.taux_application_pct) else f"{row.taux_application_pct:.1f} %")
+    c1.metric("Durée", "N/D" if pd.isna(row.get("duree_jours")) else f"{safe_int(row, 'duree_jours')} jours")
+    c2.metric("Scrutins adoptés", f"{safe_int(row, 'scrutins_adoptes')}/{safe_int(row, 'scrutins_recenses')}")
+    c3.metric("Amendements adoptés", f"{safe_int(row, 'amendements_adoptes')}/{safe_int(row, 'amendements_recenses')}")
+    c4.metric("Application", safe_percent(row, "taux_application_pct"))
     st.dataframe(ind_textes[ind_textes.titre == selection].T, width="stretch")
 
 with tabs[4]:
@@ -198,11 +209,11 @@ with tabs[8]:
     selected = st.selectbox("Acteur", ind_acteurs.nom.sort_values(), key="actor")
     actor = ind_acteurs[ind_acteurs.nom == selected].iloc[0]
     c1,c2,c3,c4 = st.columns(4)
-    c1.metric("Votes exprimés", int(actor.votes_exprimes))
-    c2.metric("Participation", "N/D" if pd.isna(actor.participation_pct) else f"{actor.participation_pct:.1f} %")
-    c3.metric("Amendements déposés", int(actor.amendements_deposes))
-    c4.metric("Taux d'adoption", "N/D" if pd.isna(actor.taux_adoption_amendements_pct) else f"{actor.taux_adoption_amendements_pct:.1f} %")
-    st.caption(actor.qualite)
+    c1.metric("Votes exprimés", safe_int(actor, "votes_exprimes"))
+    c2.metric("Participation", safe_percent(actor, "participation_pct"))
+    c3.metric("Amendements déposés", safe_int(actor, "amendements_deposes"))
+    c4.metric("Taux d'adoption", safe_percent(actor, "taux_adoption_amendements_pct"))
+    st.caption(str(actor.get("qualite", "")))
 
 with tabs[9]:
     st.dataframe(ind_groupes, width="stretch", hide_index=True)

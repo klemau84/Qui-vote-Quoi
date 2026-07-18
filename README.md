@@ -1,3 +1,3 @@
-# Qui vote quoi — V8.1
+# Qui vote quoi — V8.2
 
-Correctif de robustesse : l'application vérifie la base SQLite au démarrage et la reconstruit automatiquement depuis les CSV lorsqu'une table manque.
+Correctif des colonnes dupliquées dans les indicateurs de textes et sécurisation des métriques lorsque les données sont absentes.
