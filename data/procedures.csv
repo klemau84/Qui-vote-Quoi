@@ -1,0 +1,8 @@
+﻿texte_id,date_debut_observee,date_fin_observee,duree_jours,nombre_lectures,reunions_commission,seances_publiques,amendements_deposes,amendements_adoptes,qualite
+FR-AN-17-1286,2025-05-15,2025-06-04,20.0,1.0,1.0,1.0,0.0,0.0,Données partielles issues du dossier officiel
+FR-SEN-2026-AGRI,2026-06-01,2026-06-29,28.0,1.0,1.0,1.0,1.0,0.0,Durée calculée sur la période documentée dans la V5
+FR-SEN-2026-LPM,2026-05-01,2026-06-02,32.0,1.0,1.0,1.0,2.0,2.0,Durée calculée sur la période documentée dans la V5
+FR-SEN-2026-AIDE-MOURIR,2026-01-01,2026-01-28,27.0,1.0,1.0,1.0,0.0,0.0,Données partielles
+FR-SEN-2026-DEVOIR-CONJUGAL,2026-03-01,2026-04-09,39.0,1.0,1.0,1.0,0.0,0.0,Données partielles
+FR-SEN-2026-AIDE-MOURIR-2,2026-04-15,2026-05-11,26.0,1.0,1.0,1.0,0.0,0.0,Données partielles
+EU-EP-2024,,,,,,,,,Dataset agrégé : durée non calculable
