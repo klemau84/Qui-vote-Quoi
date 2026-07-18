@@ -1,3 +1,3 @@
-# Qui vote quoi — V8
+# Qui vote quoi — V8.1
 
-Fiches élus et groupes, chronologies, mobilisation, application des lois et couverture des données.
+Correctif de robustesse : l'application vérifie la base SQLite au démarrage et la reconstruit automatiquement depuis les CSV lorsqu'une table manque.

@@ -1,20 +1,27 @@
 
 from pathlib import Path
 import sqlite3
+import sys
 import pandas as pd
 import plotly.express as px
 import streamlit as st
 
 st.set_page_config(page_title="Qui vote quoi", page_icon="🗳️", layout="wide")
-DB = Path(__file__).parent / "database" / "legislation.sqlite"
 
-@st.cache_resource
-def connection():
-    return sqlite3.connect(DB, check_same_thread=False)
+BASE = Path(__file__).parent
+SCRIPTS = BASE / "scripts"
+if str(SCRIPTS) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS))
+
+from bootstrap_database import ensure_database
+
+DB = BASE / "database" / "legislation.sqlite"
+DATABASE_REBUILT = ensure_database()
 
 @st.cache_data
 def query(sql):
-    return pd.read_sql_query(sql, connection())
+    with sqlite3.connect(DB) as con:
+        return pd.read_sql_query(sql, con)
 
 textes = query("SELECT * FROM textes")
 scrutins = query("SELECT * FROM scrutins")
@@ -35,7 +42,9 @@ imports = query("SELECT * FROM statut_imports")
 sources = query("SELECT * FROM sources")
 
 st.title("Qui vote quoi")
-st.caption("V8 · Votes, efficacité, chronologie, élus, groupes et application des lois")
+if DATABASE_REBUILT:
+    st.success("La base de données a été reconstruite automatiquement depuis les fichiers CSV.")
+st.caption("V8.1 · Votes, efficacité, chronologie, élus, groupes et application des lois")
 
 with st.sidebar:
     niveaux = st.multiselect(

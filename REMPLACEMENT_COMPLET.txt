@@ -1,1 +1,1 @@
-Conserver uniquement .git, supprimer le reste et copier tous les fichiers. Commit conseillé : V8 - Chronologie, élus et application
+Conserver uniquement .git, supprimer absolument tout le reste, puis copier l'intégralité du ZIP. Commit conseillé : V8.1 - Correctif base SQLite
