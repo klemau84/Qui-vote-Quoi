@@ -1,1 +1,1 @@
-Conserver uniquement .git, supprimer le reste et copier tous les fichiers. Commit conseillé : V5 - Efficacité et mobilisation
+Conserver uniquement .git, supprimer le reste et copier tous les fichiers. Commit conseillé : V8 - Chronologie, élus et application

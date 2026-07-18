@@ -1,1 +1,14 @@
-﻿groupe_id,nom_groupe,institution,scrutins_analyses,votes_pour,votes_contre,abstentions,participation_pct,discipline_pct,amendements_deposes,amendements_adoptes,taux_adoption_amendements_pct,textes_soutenus,textes_adoptes,taux_succes_textes_pct,qualite
+﻿groupe_id,nom_groupe,institution,niveau,scrutins_analyses,votes_pour,votes_contre,abstentions,participation_pct,discipline_pct,amendements_deposes,amendements_adoptes,taux_adoption_amendements_pct,textes_soutenus,textes_adoptes,taux_succes_textes_pct,qualite
+AN-EPR,Ensemble pour la République,Assemblée nationale,France,0,0,0,0,,,0,0,,0,0,,En attente des positions par groupe
+AN-RN,Rassemblement National,Assemblée nationale,France,0,0,0,0,,,0,0,,0,0,,En attente des positions par groupe
+AN-LFI,La France insoumise - Nouveau Front Populaire,Assemblée nationale,France,0,0,0,0,,,0,0,,0,0,,En attente des positions par groupe
+AN-SOC,Socialistes et apparentés,Assemblée nationale,France,0,0,0,0,,,0,0,,0,0,,En attente des positions par groupe
+AN-DR,Droite Républicaine,Assemblée nationale,France,0,0,0,0,,,0,0,,0,0,,En attente des positions par groupe
+SEN-LR,Les Républicains,Sénat,France,0,0,0,0,,,0,0,,0,0,,En attente des positions par groupe
+SEN-SER,"Socialiste, Écologiste et Républicain",Sénat,France,0,0,0,0,,,0,0,,0,0,,En attente des positions par groupe
+SEN-UC,Union Centriste,Sénat,France,0,0,0,0,,,0,0,,0,0,,En attente des positions par groupe
+SEN-RDPI,"Rassemblement des démocrates, progressistes et indépendants",Sénat,France,0,0,0,0,,,0,0,,0,0,,En attente des positions par groupe
+EP-EPP,Parti populaire européen,Parlement européen,Union européenne,0,0,0,0,,,0,0,,0,0,,En attente des positions par groupe
+EP-SD,Alliance progressiste des socialistes et démocrates,Parlement européen,Union européenne,0,0,0,0,,,0,0,,0,0,,En attente des positions par groupe
+EP-RE,Renew Europe,Parlement européen,Union européenne,0,0,0,0,,,0,0,,0,0,,En attente des positions par groupe
+EP-GREENS,Verts/ALE,Parlement européen,Union européenne,0,0,0,0,,,0,0,,0,0,,En attente des positions par groupe

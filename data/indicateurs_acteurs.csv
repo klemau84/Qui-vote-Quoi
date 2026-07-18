@@ -1,1 +1,7 @@
-﻿acteur_id,nom,institution,groupe,scrutins_eligibles,votes_exprimes,participation_pct,votes_pour,votes_contre,abstentions,votes_dissidents,discipline_groupe_pct,amendements_deposes,amendements_adoptes,taux_adoption_amendements_pct,rapports,qualite
+﻿acteur_id,nom,type_acteur,niveau,institution,groupe,scrutins_eligibles,votes_exprimes,participation_pct,votes_pour,votes_contre,abstentions,votes_dissidents,discipline_groupe_pct,amendements_deposes,amendements_adoptes,taux_adoption_amendements_pct,qualite
+ACT-GOUV,Gouvernement,Institution,France,,,0,0,,0,0,0,,,1,1,100.0,Partiel : amendements présents dans l'échantillon
+ACT-AN,Assemblée nationale,Institution,France,,,0,0,,0,0,0,,,0,0,,En attente des imports nominatifs
+ACT-SEN,Sénat,Institution,France,,,0,0,,0,0,0,,,0,0,,En attente des imports nominatifs
+ACT-EP,Parlement européen,Institution,Union européenne,,,0,0,,0,0,0,,,0,0,,En attente des imports nominatifs
+ACT-YBP,Yaël Braun-Pivet,Personne,France,Assemblée nationale,,0,0,,0,0,0,,,0,0,,En attente des imports nominatifs
+ACT-RT,Rachid Temal,Personne,France,Sénat,SER,0,0,,0,0,0,,,1,1,100.0,Partiel : amendements présents dans l'échantillon

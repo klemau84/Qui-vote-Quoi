@@ -20,10 +20,13 @@ FILES = {
     "statut_imports":"statut_imports.csv",
     "procedures":"procedures.csv",
     "application_textes":"application_textes.csv",
+    "application_textes_enrichie":"application_textes_enrichie.csv",
     "indicateurs_textes":"indicateurs_textes.csv",
     "indicateurs_acteurs":"indicateurs_acteurs.csv",
     "indicateurs_groupes":"indicateurs_groupes.csv",
     "mobilisation":"mobilisation.csv",
+    "chronologie_procedures":"chronologie_procedures.csv",
+    "couverture_donnees":"couverture_donnees.csv",
 }
 
 if DB.exists():
@@ -36,7 +39,7 @@ for table, filename in FILES.items():
 con.execute("CREATE INDEX IF NOT EXISTS idx_textes_theme ON textes(theme)")
 con.execute("CREATE INDEX IF NOT EXISTS idx_scrutins_texte ON scrutins(texte_id)")
 con.execute("CREATE INDEX IF NOT EXISTS idx_amendements_texte ON amendements(texte_id)")
-con.execute("CREATE INDEX IF NOT EXISTS idx_indicateurs_texte ON indicateurs_textes(texte_id)")
+con.execute("CREATE INDEX IF NOT EXISTS idx_timeline_texte ON chronologie_procedures(texte_id)")
 con.commit()
 con.close()
 print(DB)

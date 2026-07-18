@@ -1,14 +1,3 @@
+# Qui vote quoi — V8
 
-# Qui vote quoi — V5
-
-Cette version renomme l'application et ajoute :
-
-- indicateurs d'efficacité par texte ;
-- taux d'adoption des scrutins et amendements ;
-- durée observée des procédures ;
-- indicateur de mobilisation parlementaire ;
-- structure de fiches élus et groupes ;
-- suivi des décrets d'application ;
-- définitions méthodologiques explicites.
-
-Les scores ne portent que sur les données déjà intégrées.
+Fiches élus et groupes, chronologies, mobilisation, application des lois et couverture des données.
