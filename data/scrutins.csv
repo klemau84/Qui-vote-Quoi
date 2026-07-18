@@ -1,3 +1,6 @@
-﻿scrutin_id,texte_id,institution,date_scrutin,objet,resultat,votants,exprimes,pour,contre,abstention,non_participation,url_officielle,qualite
-FR-SEN-SCR-322,FR-SEN-2026-AGRI,Sénat,2026-06-29,Article 2 quater,Adopté,331.0,312.0,183.0,129.0,19.0,17.0,https://www.senat.fr/scrutin-public/2025/scr2025-322.html,Officiel
-FR-SEN-SCR-292,FR-SEN-2026-LPM,Sénat,2026-06-02,Amendements identiques 123 et 208,Adopté,,,,,,,https://www.senat.fr/scrutin-public/2025/scr2025-292.html,Détail numérique à importer
+﻿scrutin_id,texte_id,institution,date_scrutin,objet,resultat,votants,exprimes,pour,contre,abstention,non_participation,url_officielle,qualite,participation_pct,marge_voix,part_majoritaire_pct,indice_clivage,niveau_clivage
+FR-SEN-SCR-322,FR-SEN-2026-AGRI,Sénat,2026-06-29,Article 2 quater,Adopté,331.0,312.0,183.0,129.0,19.0,17.0,https://www.senat.fr/scrutin-public/2025/scr2025-322.html,Officiel,95.1,54.0,58.7,41.3,Très clivant
+FR-SEN-SCR-292,FR-SEN-2026-LPM,Sénat,2026-06-02,Amendements identiques 123 et 208,Adopté,,,,,,,https://www.senat.fr/scrutin-public/2025/scr2025-292.html,Détail numérique à importer,,,,,
+FR-SEN-SCR-169,FR-SEN-2026-AIDE-MOURIR,Sénat,2026-01-28,Ensemble de la proposition de loi relative au droit à l’aide à mourir,Rejeté,341.0,303.0,122.0,181.0,38.0,7.0,https://www.senat.fr/scrutin-public/2025/scr2025-169.html,Résultat officiel,98.0,59.0,59.7,40.3,Très clivant
+FR-SEN-SCR-226,FR-SEN-2026-DEVOIR-CONJUGAL,Sénat,2026-04-09,Ensemble de la proposition de loi visant à mettre fin au devoir conjugal,Adopté,333.0,211.0,209.0,2.0,122.0,15.0,https://www.senat.fr/scrutin-public/2025/scr2025-226.html,Résultat officiel,95.7,207.0,99.1,0.9,Consensus fort
+FR-SEN-SCR-265,FR-SEN-2026-AIDE-MOURIR-2,Sénat,2026-05-11,"Article 2 de la proposition de loi relative au droit à l’aide à mourir, deuxième lecture",Rejeté,327.0,269.0,118.0,151.0,58.0,21.0,https://www.senat.fr/scrutin-public/2025/scr2025-265.html,Résultat officiel,94.0,33.0,56.1,43.9,Très clivant

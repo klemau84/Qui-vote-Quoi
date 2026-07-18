@@ -1,3 +1,3 @@
-# Observatoire législatif — V1
+# Observatoire législatif — V4
 
-Base SQLite, textes, scrutins, amendements et connecteurs France/Europe.
+Échantillon officiel enrichi, analyse du clivage, groupes politiques et connecteurs d'import.

@@ -1,0 +1,14 @@
+﻿groupe_id,nom_groupe,institution,niveau
+AN-EPR,Ensemble pour la République,Assemblée nationale,France
+AN-RN,Rassemblement National,Assemblée nationale,France
+AN-LFI,La France insoumise - Nouveau Front Populaire,Assemblée nationale,France
+AN-SOC,Socialistes et apparentés,Assemblée nationale,France
+AN-DR,Droite Républicaine,Assemblée nationale,France
+SEN-LR,Les Républicains,Sénat,France
+SEN-SER,"Socialiste, Écologiste et Républicain",Sénat,France
+SEN-UC,Union Centriste,Sénat,France
+SEN-RDPI,"Rassemblement des démocrates, progressistes et indépendants",Sénat,France
+EP-EPP,Parti populaire européen,Parlement européen,Union européenne
+EP-SD,Alliance progressiste des socialistes et démocrates,Parlement européen,Union européenne
+EP-RE,Renew Europe,Parlement européen,Union européenne
+EP-GREENS,Verts/ALE,Parlement européen,Union européenne

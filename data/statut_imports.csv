@@ -1,0 +1,7 @@
+﻿producteur,jeu,statut,prochaine_etape
+Assemblée nationale,Votes publics XVIIe législature,Connecteur prêt,XML officiel à normaliser
+Assemblée nationale,Amendements XVIIe législature,Connecteur prêt,"Données auteurs, contenu et sort"
+Sénat,Scrutins publics,Échantillon intégré,Import massif à automatiser
+Sénat,AMELI amendements,Connecteur prêt,Base officielle
+Parlement européen,Roll-call votes,Connecteur prêt,API v2 / XML
+Légifrance,Décrets et textes d’application,Connecteur prêt,Identifiants PISTE requis

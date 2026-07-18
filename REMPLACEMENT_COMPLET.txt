@@ -1,1 +1,1 @@
-Créer le dépôt observatoire-legislatif. Commit conseillé : V1 - Socle France et Europe
+Conserver uniquement .git, remplacer tous les autres fichiers. Commit conseillé : V4 - Votes, groupes et clivage
