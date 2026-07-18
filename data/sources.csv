@@ -1,0 +1,8 @@
+﻿source,producteur,url,contenu
+Assemblée nationale — travaux parlementaires,Assemblée nationale,https://data.assemblee-nationale.fr/travaux-parlementaires,"Dossiers, amendements, débats et votes"
+Assemblée nationale — votes,Assemblée nationale,https://data.assemblee-nationale.fr/travaux-parlementaires/votes,Positions individuelles
+Sénat Open Data,Sénat,https://data.senat.fr/,"Dossiers, amendements et scrutins"
+Base AMELI,Sénat,https://data.senat.fr/ameli/,Amendements
+API Légifrance,DILA / PISTE,https://piste.gouv.fr/,"Lois, décrets et arrêtés"
+Parlement européen API v2,Parlement européen,https://data.europarl.europa.eu/api/v2,Textes et votes
+Votes du Parlement européen,Parlement européen,https://www.europarl.europa.eu/plenary/en/votes.html,Votes par appel nominal

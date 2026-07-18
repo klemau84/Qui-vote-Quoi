@@ -1,0 +1,3 @@
+﻿scrutin_id,texte_id,institution,date_scrutin,objet,resultat,votants,exprimes,pour,contre,abstention,non_participation,url_officielle,qualite
+FR-SEN-SCR-322,FR-SEN-2026-AGRI,Sénat,2026-06-29,Article 2 quater,Adopté,331.0,312.0,183.0,129.0,19.0,17.0,https://www.senat.fr/scrutin-public/2025/scr2025-322.html,Officiel
+FR-SEN-SCR-292,FR-SEN-2026-LPM,Sénat,2026-06-02,Amendements identiques 123 et 208,Adopté,,,,,,,https://www.senat.fr/scrutin-public/2025/scr2025-292.html,Détail numérique à importer

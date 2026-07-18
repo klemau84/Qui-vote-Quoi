@@ -1,0 +1,7 @@
+﻿acteur_id,nom,type_acteur,niveau,institution,groupe
+ACT-GOUV,Gouvernement,Institution,France,,
+ACT-AN,Assemblée nationale,Institution,France,,
+ACT-SEN,Sénat,Institution,France,,
+ACT-EP,Parlement européen,Institution,Union européenne,,
+ACT-YBP,Yaël Braun-Pivet,Personne,France,Assemblée nationale,
+ACT-RT,Rachid Temal,Personne,France,Sénat,SER
